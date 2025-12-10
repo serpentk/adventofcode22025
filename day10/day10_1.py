@@ -29,6 +29,5 @@ for line in sys.stdin:
     data = line.strip().split()
     goal = data[0][1:-1]
     buttons = [[int(x) for x in b[1:-1].split(',')] for b in data[1:-1]]
-    c = get_lights(goal, buttons)
-    s += c
+    s += get_lights(goal, buttons)
 print(s)
